@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import Sidebar from '../components/Sidebar/Sidebar'
-import { StyledMainContent } from '../styled-components/styled-mainview'
+import Head from "next/head";
+import Particle from "../components/Particles";
+import Sidebar from "../components/Sidebar/Sidebar";
+import { StyledMainContent } from "../styled-components/styled-mainview";
 // import Image from 'next/image'
-
 
 export default function Home() {
   return (
@@ -16,7 +16,15 @@ export default function Home() {
       <main>
         <Sidebar />
         <StyledMainContent className="main-content">
-
+          <div className="lines">
+            <div className="line-1"></div>
+            <div className="line-2"></div>
+            <div className="line-3"></div>
+            <div className="line-4"></div>
+          </div>
+          <div className="p-particles">
+            <Particle />
+          </div>
         </StyledMainContent>
       </main>
 
@@ -33,5 +41,5 @@ export default function Home() {
         </a>
       </footer> */}
     </>
-  )
+  );
 }
