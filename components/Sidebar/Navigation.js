@@ -29,7 +29,7 @@ const Navigation = () => {
             Home
           </a>
         </Link>
-        <Link href="#" passHref>
+        <Link href="/resume" passHref>
           <a className="nav-item">
             Resume
           </a>
@@ -39,9 +39,9 @@ const Navigation = () => {
             Projects
           </a>
         </Link>
-        <Link href="#" passHref>
+        <Link href="/contact" passHref>
           <a className="nav-item">
-            Message me
+            Contact
           </a>
         </Link>
       </div>
@@ -87,6 +87,8 @@ export const StyledNavigation = styled.nav`
     position: relative;
     transition: all 0.5s cubic-bezier(1,-0.14,.24,.91);
     z-index: 4;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 
 
     &:hover {

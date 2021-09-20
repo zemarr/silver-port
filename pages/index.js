@@ -1,8 +1,7 @@
 import Head from "next/head";
-import Particle from "../components/Particles";
-import Sidebar from "../components/Sidebar/Sidebar";
 import { StyledMainContent } from "../styled-components/styled-mainview";
-// import Image from 'next/image'
+import HomeComponent from "../components/homecomponent/homecomponent";
+import Sidebar from "../components/Sidebar/Sidebar";
 
 export default function Home() {
   return (
@@ -22,24 +21,9 @@ export default function Home() {
             <div className="line-3"></div>
             <div className="line-4"></div>
           </div>
-          <div className="p-particles">
-            <Particle />
-          </div>
+          <HomeComponent />
         </StyledMainContent>
       </main>
-
-      {/* <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer> */}
     </>
   );
 }

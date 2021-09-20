@@ -7,6 +7,7 @@ const Particle = () => {
       <Particles
         width="100%"
         height="100%"
+        style={{height: "100%"}}
         params={{
           particles: {
             number: {
@@ -17,13 +18,13 @@ const Particle = () => {
               },
             },
             color: {
-              value: "#3256cd",
+              value: "#4f33fe",
             },
             shape: {
               type: "circle",
               stroke: {
                 width: 0,
-                color: "#000000",
+                color: "#fff",
               },
               polygon: {
                 nb_sides: 11,
@@ -55,22 +56,22 @@ const Particle = () => {
               },
             },
             line_linked: {
-              enable: true,
-              distance: 300,
+              enable: false,
+              distance: 150,
               color: "#ffffff",
               opacity: 0.14430708547789706,
               width: 1,
             },
             move: {
               enable: true,
-              speed: 6,
+              speed: 1,
               direction: "none",
               random: false,
               straight: false,
               out_mode: "out",
               bounce: false,
               attract: {
-                enable: false,
+                enable: true,
                 rotateX: 600,
                 rotateY: 1200,
               },
@@ -81,19 +82,19 @@ const Particle = () => {
             events: {
               onhover: {
                 enable: true,
-                mode: "repulse",
+                mode: "grab",
               },
               onclick: {
-                enable: true,
+                enable: false,
                 mode: "push",
               },
               resize: true,
             },
             modes: {
               grab: {
-                distance: 400,
+                distance: 100,
                 line_linked: {
-                  opacity: 1,
+                  opacity: .2,
                 },
               },
               bubble: {
@@ -104,7 +105,7 @@ const Particle = () => {
                 speed: 3,
               },
               repulse: {
-                distance: 150,
+                distance: 90,
                 duration: 0.4,
               },
               push: {
