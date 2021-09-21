@@ -2,6 +2,10 @@ import styled from "styled-components"
 import { InnerLayout } from "../MainLayout"
 import Title from "../Title"
 import Button from '../button/button'
+import PhoneIcon from '@material-ui/icons/Phone'
+import EmailIcon from '@material-ui/icons/Email'
+import LocationOnIcon from '@material-ui/icons/LocationOn'
+import ContactItem from "./contactitem"
 
 const ContactComponent = () => {
     return (
@@ -33,7 +37,9 @@ const ContactComponent = () => {
                             </div>
                         </form>
                     </div>
-                    <div className="right-content"></div>
+                    <div className="right-content">
+                        <ContactItem icon={PhoneIcon} title='Phone' contact1='+2348157731698' />
+                    </div>
                 </InnerLayout>
             </StyledContact>
         </>
