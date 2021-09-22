@@ -8,6 +8,9 @@ import LocationOnIcon from '@material-ui/icons/LocationOn'
 import ContactItem from "./contactitem"
 
 const ContactComponent = () => {
+    const phoneIcon = <PhoneIcon />
+    const emailIcon = <EmailIcon />
+    const locationIcon = <LocationOnIcon />
     return (
         <>
             <StyledContact>
@@ -38,7 +41,9 @@ const ContactComponent = () => {
                         </form>
                     </div>
                     <div className="right-content">
-                        <ContactItem icon={PhoneIcon} title='Phone' contact1='+2348157731698' />
+                        <ContactItem icon={phoneIcon} title='Phone' contact1='+2348157731698' />
+                        <ContactItem icon={emailIcon} title='Email' contact1='chukwudalu.ayika@quabbly.com' />
+                        <ContactItem icon={locationIcon} title='Location' contact1='Safe Haven' />
                     </div>
                 </InnerLayout>
             </StyledContact>
@@ -55,6 +60,7 @@ const StyledContact = styled.div`
     .contact-section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
 
         .contact-title {
             h4 {
@@ -102,6 +108,13 @@ const StyledContact = styled.div`
                 font-size: 1rem;
                 font-family: monospace;
             }
+        }
+
+        .right-content {
+            /* height: fit-content; */
+            display: flex;
+            /* justify-content: space-between; */
+            flex-direction: column;
         }
     }
 `

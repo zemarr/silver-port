@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
 
 :root {
   --primary-color: #4f33fe;
@@ -7,12 +7,12 @@
   --background-dark-color: #10121a;
   --border-color: #2e344e;
   --background-light-color: #f1f1f1;
-  --background-light-color-2: rgba(3,127,255,.3);
+  --background-light-color-2: rgba(3, 127, 255, 0.3);
   --white-color: #fff;
   --font-light-color: #a4acc4;
   --font-dark-color: #313131;
   --font-dark-color-2: #151515;
-  --sidebar-dark-color: #191D2B;
+  --sidebar-dark-color: #191d2b;
   --scrollbar-bg-color: #383838;
   --scrollbar-thump-color: #6b6b6b;
   --scrollbar-track-color: #383838;
@@ -22,7 +22,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 1rem;
   background-color: var(--font-dark-color-2);
   color: var(--font-light-color);
@@ -38,9 +38,11 @@ p {
   font-style: 16px !important;
 }
 
-/* h1 {
-  font-size: 4rem !important;
-} */
+h6 {
+  color: var(--white-color);
+  font-size: 1rem;
+  padding-bottom: .6rem;
+}
 
 * {
   box-sizing: border-box;

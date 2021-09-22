@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledTitle = styled.div`
     position: relative;
+    margin-bottom: 5rem;
 
     h2 {
         color: var(--white-color);
