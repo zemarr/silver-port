@@ -2,6 +2,7 @@ import styled from "styled-components";
 import MainLayout from "../MainLayout";
 // import Particle from "../Particles"
 import Title from "../Title";
+import Resume from "./resume";
 import Skills from "./skills";
 
 const ResumeComponent = () => {
@@ -10,6 +11,7 @@ const ResumeComponent = () => {
       <StyledResume>
         <Title title={"Resume"} span={"Resume"} />
         <Skills />
+        <Resume />
       </StyledResume>
     </>
   );
@@ -29,6 +31,14 @@ export const StyledResume = styled.main`
     #tsparticles {
       height: 100%;
     }
+  }
+  
+  .small-title {
+    padding-bottom: 3rem;
+  }
+  
+  .resume-content {
+    border-left: 2px solid var(--border-color);
   }
 `;
 
