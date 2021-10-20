@@ -36,7 +36,7 @@ const Particle = () => {
               },
             },
             opacity: {
-              value: 0.5,
+              value: 0.3,
               random: true,
               anim: {
                 enable: true,
@@ -46,7 +46,7 @@ const Particle = () => {
               },
             },
             size: {
-              value: 5,
+              value: 2,
               random: true,
               anim: {
                 enable: true,
@@ -56,19 +56,19 @@ const Particle = () => {
               },
             },
             line_linked: {
-              enable: false,
+              enable: true,
               distance: 150,
               color: "#ffffff",
               opacity: 0.14430708547789706,
-              width: 1,
+              width: .7,
             },
             move: {
               enable: true,
-              speed: 1,
-              direction: "none",
+              speed: .5,
+              direction: "right",
               random: false,
               straight: false,
-              out_mode: "out",
+              out_mode: "bounce",
               bounce: false,
               attract: {
                 enable: true,
@@ -82,7 +82,7 @@ const Particle = () => {
             events: {
               onhover: {
                 enable: true,
-                mode: "grab",
+                mode: "repulse",
               },
               onclick: {
                 enable: false,
@@ -105,7 +105,7 @@ const Particle = () => {
                 speed: 3,
               },
               repulse: {
-                distance: 90,
+                distance: 150,
                 duration: 0.4,
               },
               push: {
