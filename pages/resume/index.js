@@ -9,7 +9,7 @@ const Resume = () => {
     <>
       <Sidebar />
       <MainLayout>
-        <StyledMainContent className="main-content">
+        <StyledMainContent tablet className="main-content">
           <ResumeComponent />
         </StyledMainContent>
       </MainLayout>

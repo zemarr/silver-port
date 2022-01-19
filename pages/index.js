@@ -14,7 +14,7 @@ export default function Home() {
 
       <main>
         <Sidebar />
-        <StyledMainContent className="main-content">
+        <StyledMainContent tablet className="main-content">
           <div className="lines">
             <div className="line-1"></div>
             <div className="line-2"></div>

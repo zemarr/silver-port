@@ -1,16 +1,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from 'next/router'
 import Image from "next/image";
 import styled from "styled-components";
 
 const Navigation = () => {
-    const [navIndex, setNavIndex] = useState(0);
-
-    const handleNavIndex = (index) => {
-        // setNavIndex(index)
-        // console.log()
-    }
-    // console.log(navIndex)
+  const router = useRouter();
 
   return (
     <StyledNavigation>
@@ -25,22 +20,22 @@ const Navigation = () => {
       </div>
       <div className="nav-items">
         <Link href="/" passHref>
-          <a className="nav-item">
+          <a className={router.pathname === '/' ? 'nav-item active-class' : 'nav-item'}>
             Home
           </a>
         </Link>
         <Link href="/resume" passHref>
-          <a className="nav-item">
+          <a className={router.pathname === '/resume' ? 'nav-item active-class' : 'nav-item'}>
             Resume
           </a>
         </Link>
-        <Link href="#" passHref>
-          <a className="nav-item">
+        <Link href="/projects" passHref>
+          <a className={router.pathname === '/projects' ? 'nav-item active-class' : 'nav-item'}>
             Projects
           </a>
         </Link>
         <Link href="/contact" passHref>
-          <a className="nav-item">
+          <a className={router.pathname === '/contact' ? 'nav-item active-class' : 'nav-item'}>
             Contact
           </a>
         </Link>
@@ -73,9 +68,11 @@ export const StyledNavigation = styled.nav`
     display: flex;
     flex-direction: column;
     width: inherit;
-    .active-class {
-        background-color: var(--primary-color);
-    }
+  }
+
+  .active-class {
+    background-color: var(--primary-color);
+    transition: all 0.5s cubic-bezier(0.5,-0.14,.24,.91);
   }
 
   .nav-item {
@@ -85,7 +82,7 @@ export const StyledNavigation = styled.nav`
     width: 100%;
     text-align: center;
     position: relative;
-    transition: all 0.5s cubic-bezier(1,-0.14,.24,.91);
+    transition: all 0.5s cubic-bezier(0.5,-0.14,.24,.91);
     z-index: 4;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -104,7 +101,7 @@ export const StyledNavigation = styled.nav`
         height: 50%;
         background-color: var(--primary-color);
         opacity: 0.2;
-        transition: all 0.5s cubic-bezier(1,-0.14,.24,.91);
+        transition: all 0.5s cubic-bezier(0.5,-0.14,.24,.91);
         z-index: 3;
         transform-origin: top;
     }

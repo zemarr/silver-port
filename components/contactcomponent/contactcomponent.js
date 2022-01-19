@@ -42,7 +42,7 @@ const ContactComponent = () => {
                     </div>
                     <div className="right-content">
                         <ContactItem icon={phoneIcon} title='Phone' contact1='+2348157731698' />
-                        <ContactItem icon={emailIcon} title='Email' contact1='chukwudalu.ayika@quabbly.com' />
+                        <ContactItem icon={emailIcon} title='Email' contact1='chukwudalu@kinfolk.vc' />
                         <ContactItem icon={locationIcon} title='Location' contact1='Safe Haven' />
                     </div>
                 </InnerLayout>

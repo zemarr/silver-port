@@ -16,6 +16,12 @@ const Layout = styled.div`
 
 export const InnerLayout = styled.div`
     /* background-color: green; */
+    margin-top: 150px;
+    padding-bottom: 50px;
+
+    @media screen and (max-width: 768px) {
+        display: ${({tablet}) => (tablet ? '0' : '16.3rem')};
+    }
 `
 
 export default MainLayout

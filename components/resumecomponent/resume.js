@@ -17,7 +17,25 @@ const Resume = () => {
                 </div>
                 <div className={"resume-content"}>
                     <ExperienceCard
-                        year={"June 2021 - Present"}
+                        year={"January 2022 - Present"}
+                        title={"Social media Manager/Content Creator"}
+                        subTitle={"Tribes Of Ladies"}
+                        text={"There are many variations of passages of Lorem Ipsum available, " +
+                        "but the majority have suffered alteration in some form, by injected humour, " +
+                        "or randomised words which don't look even slightly believable. If you are going " +
+                        "to use a passage of Lorem Ipsum, you have suffered alteration in some form, by injected humour, " +
+                        "or randomised words which don't look even slightly believable. If you are going"} />
+                    <ExperienceCard
+                        year={"November 2021 - Present"}
+                        title={"Software Engineer"}
+                        subTitle={"Kinfolk Venture Capital"}
+                        text={"There are many variations of passages of Lorem Ipsum available, " +
+                        "but the majority have suffered alteration in some form, by injected humour, " +
+                        "or randomised words which don't look even slightly believable. If you are going " +
+                        "to use a passage of Lorem Ipsum, you have suffered alteration in some form, by injected humour, " +
+                        "or randomised words which don't look even slightly believable. If you are going"} />
+                    <ExperienceCard
+                        year={"June 2021 - Nov 2021"}
                         title={"Frontend Engineer"}
                         subTitle={"Quabbly"}
                         text={"There are many variations of passages of Lorem Ipsum available, " +
@@ -26,7 +44,7 @@ const Resume = () => {
                         "to use a passage of Lorem Ipsum, you have suffered alteration in some form, by injected humour, " +
                         "or randomised words which don't look even slightly believable. If you are going"} />
                     <ExperienceCard
-                        year={"2019 - 2020"}
+                        year={"Mar 2019 - April 2020"}
                         title={"Frontend Web Developer"}
                         subTitle={"Stutern"}
                         text={"There are many variations of passages of Lorem Ipsum available, " +
@@ -35,7 +53,7 @@ const Resume = () => {
                         "to use a passage of Lorem Ipsum, you have suffered alteration in some form, by injected humour, " +
                         "or randomised words which don't look even slightly believable. If you are going"} />
                     <ExperienceCard
-                        year={"2018 - 2019"}
+                        year={"July 2018 - Jan 2019"}
                         title={"Frontend Web Development Bootcamp"}
                         subTitle={"Stutern"}
                         text={"There are many variations of passages of Lorem Ipsum available, " +

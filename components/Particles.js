@@ -99,17 +99,17 @@ const Particle = () => {
               },
               bubble: {
                 distance: 400,
-                size: 40,
+                size: 400,
                 duration: 2,
                 opacity: 8,
-                speed: 3,
+                speed: 0.8,
               },
               repulse: {
-                distance: 150,
-                duration: 0.4,
+                distance: 80,
+                duration: 3,
               },
               push: {
-                particles_nb: 4,
+                particles_nb: 300,
               },
               remove: {
                 particles_nb: 2,

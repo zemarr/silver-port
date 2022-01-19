@@ -2,8 +2,12 @@ import styled from "styled-components";
 
 export const StyledMainContent = styled.section`
     position: relative;
-    margin-left: 16.3rem;
+    margin-left: ${({tablet}) => (tablet ? '16.3rem' : '0')};
     min-height: 100vh;
+
+    @media screen and (max-width: 1024px) {
+        margin-left: ${({tablet}) => (tablet ? '0' : '16.3rem')};
+    }
 
     .lines {
         position: absolute;
